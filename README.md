@@ -31,16 +31,31 @@ Best Model:
 ![Best model parameters](https://user-images.githubusercontent.com/56005109/176930227-c482910e-9497-4d5e-b887-3a10c9c331bf.PNG)
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+The model chosen for the HyperDrive run was a random forest classifer. RF are versatile ensemble algorithm that is an extension of bagging that also randomly selects subsets of features used in each data sample. Random forests have proven effective on a wide range of different predictive modeling problems. 
 
+Model hyper parameters:
+1. n_estimators(trees in the forest): 10 - 200.
+2. maximum depth: 10 - 100
+
+The ranges chosen for each hyper parameter was determined to provide a sufficient choice for the random parameter sampling method that was implemented within the hyper drive configuration, while keeping training time fairly short so not to hit a session timeout. The Median Stopping policy was chosen for this tasks. This computes running averages across all runs and cancels runs whose best performance is worse than the median of the running averages. Specifically, a run will be canceled at interval N if its best primary metric reported up to interval N is worse than the median of the running averages for intervals 1:N across all runs.
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+1. AUC - 0.984
+2. Parameters - {"--max_depth": 78.0, "--n_estimators": 187.0}
+3. Improvements - Again, random forest is very effective on a wide range of problems, but like bagging algorithms, performance of the standard algorithm is not great on imbalanced classification problems. One method to improve the algorithms performance could be to change the weight that each class has when calculating the “impurity” score of a chosen split point (This modification of random forest is referred to as Weighted Random Forest).
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Run Details:
+![RunDetails2](https://user-images.githubusercontent.com/56005109/176933458-fa484a5b-5e34-4ecf-9043-916b1e07be4c.PNG)
+
+Best Model:
+![HyperDriveBestModel](https://user-images.githubusercontent.com/56005109/176933616-c70bbc29-3060-46da-9cff-3383902356de.PNG)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+The automl model was deployed as an Azure Container Instance and was queried using searlised JSON data that was sent to the model's endpoint as an http request. The "Model Deployment" section of the automl.ipynb notebook highlights all the neccessary steps to deploy and query the deployed model with a random sample of data. 
+
+Deployed Model Status:
+![DeploymentSuccess](https://user-images.githubusercontent.com/56005109/176935117-5fba4072-52aa-4781-aed9-44f40170bff9.PNG)
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
