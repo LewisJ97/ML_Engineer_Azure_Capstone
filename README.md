@@ -1,8 +1,6 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Machine Learning Engineer with Azure - Capstone Project
 
-# Your Project Title Here
-
-*TODO:* Write a short introduction to your project.
+This project aimed to detect fraudulent credit card transactions using machine learning. To solve this problem, and combine the learning from the previous two projects from the nanodegree, both Azure's AutoML and HyperDrive functions were utilised to produce machine learning solutions for this tasks. The best model was then deployed using an azure container instance, where sample data could be fed to and a response on new data could be retrieved. 
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
@@ -10,14 +8,14 @@
 ## Dataset
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+The data used for this task from obtained from Kaggle [here.](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download)
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
-[Data](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download)
+
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
