@@ -25,8 +25,8 @@ For the AutoML run, the experiment run time was limited to 20 minutes, as with 5
 3. Improvements - Since the model runs were dealing with a dataset with class imbalance then an approach to improve model output would usually involve balancing the class either by oversampling or under sampling or create synthetic samples of the minority class using the SMOTE algorithm. Once this is done then the usual Area under curve of ROC can be looked at.
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-	![Run details](https://user-images.githubusercontent.com/56005109/176929906-1e2442ab-b752-4d9a-b59a-1aaadbd9a2cd.PNG)
-  ![Best model parameters](image.jpg)
+![Run details](https://user-images.githubusercontent.com/56005109/176929906-1e2442ab-b752-4d9a-b59a-1aaadbd9a2cd.PNG)
+![Best model parameters]([BestModel1](https://user-images.githubusercontent.com/56005109/176930227-c482910e-9497-4d5e-b887-3a10c9c331bf.PNG)
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
