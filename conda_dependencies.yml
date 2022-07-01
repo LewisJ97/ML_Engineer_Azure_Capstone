@@ -5,3 +5,4 @@ dependencies:
   - pandas
   - pip:
     - azureml-defaults
+    - packaging
