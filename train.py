@@ -30,8 +30,12 @@ def main():
     # Add arguments to script
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--n_estimators', type=int, default=100, help="Number of trees in the forest.")
+    #parser.add_argument('--bootstrap', type=bool, default=None, help="Number of trees in the forest.")
+    parser.add_argument('--n_estimators', type=int, default=None, help="Number of trees in the forest.")
     parser.add_argument('--max_depth', type=int, default=None, help="Maximum depth of tree.")
+    #parser.add_argument('--max_features', type=str, default=None, help="Maximum features of tree.")
+    #parser.add_argument('--min_samples_leaf', type=int, default=None, help="Mim leafs of tree.")
+    #parser.add_argument('--min_samples_split', type=int, default=None, help="Min splits of tree.")
     parser.add_argument('--input_data', type=str)
 
     args = parser.parse_args()
