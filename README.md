@@ -51,17 +51,11 @@ Best Model:
 ![HyperDriveBestModel](https://user-images.githubusercontent.com/56005109/176933616-c70bbc29-3060-46da-9cff-3383902356de.PNG)
 
 ## Model Deployment
-The automl model was deployed as an Azure Container Instance and was queried using searlised JSON data that was sent to the model's endpoint as an http request. The "Model Deployment" section of the automl.ipynb notebook highlights all the neccessary steps to deploy and query the deployed model with a random sample of data. 
+The automl model was deployed as an Azure Container Instance and was queried using searlised JSON data that was sent to the model's endpoint as an http request. The "Model Deployment" section of the automl.ipynb notebook highlights all the neccessary steps to deploy and query the deployed model with a random sample of data. The score.py file, which receives and unpacks the data submitted as JSON, is used to confirgure the inference of the model endpoint. The data is then converted into a Pandas dataframe, NaN values are dropped, and the model is applied to generate predictions.
 
 Deployed Model Status:
 ![DeploymentSuccess](https://user-images.githubusercontent.com/56005109/176935117-5fba4072-52aa-4781-aed9-44f40170bff9.PNG)
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+A link to a video outlining the deployed AutoML model can be viwed [here](https://youtu.be/ixpc4gPBwww)
