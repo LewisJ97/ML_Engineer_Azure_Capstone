@@ -60,6 +60,7 @@ Random Data Sample:
 ![SampleDataInput](https://user-images.githubusercontent.com/56005109/176937363-d2da12df-41e4-4305-9249-1a940ff6579c.PNG)
 
 Endpoint Result:
+
 ![QueryResult](https://user-images.githubusercontent.com/56005109/176937436-1acc527c-bccd-43dc-baf0-d2da01149c56.PNG)
 
 ## Screen Recording
