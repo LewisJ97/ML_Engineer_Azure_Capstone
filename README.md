@@ -2,9 +2,6 @@
 
 This project aimed to detect fraudulent credit card transactions using machine learning. To solve this problem, and combine the learning from the previous two projects from the nanodegree, both Azure's AutoML and HyperDrive functions were utilised to produce machine learning solutions for this tasks. The best model was then deployed using an azure container instance, where sample data could be fed to and a response on new data could be retrieved. 
 
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
-
 ## Dataset
 
 ### Overview
